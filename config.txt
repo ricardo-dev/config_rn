@@ -10,6 +10,10 @@ diretorio onde será o projeto
 	1- criacao	: react-native run-android
 	2- apk ja criado: react-native start
 
+** (no caso se baixar fonte sem node_modules)
+    diretório projeto
+    $ yarn (instalar o node_modules)
+
 ** (no caso de erro de execucao:
 	react-native start --reset-cache
 	react-native run-android || run-ios ) **
