@@ -1,0 +1,185 @@
+####### Navegação
+
+** abas de navegação 
+yarn add react-navigation@2.18.3
+doc: https://reactnavigation.org/docs/en/getting-started.html
+
+error undefined is not an object (evaluating rngestureHandlerModule.State)
+solution: https://github.com/kmagiera/react-native-gesture-handler/issues/205
+yarn add react-native-gesture-handler
+react-native link react-native-gesture-handler
+
+####### consumo de APIs
+
+** necessario para apisauce - ok
+yarn add axios
+doc: https://github.com/axios/axios
+
+** consumo da API - ok
+npm i apisauce --save
+doc: https://www.npmjs.com/package/apisauce
+
+####### icones e layout
+
+** vetores e icones - ok
+yarn add react-native-vector-icons
+react-native link
+doc: https://fontawesome.com/icons?d=gallery
+
+** para layout    - header sem sombra - drawer sem problemas - ok
+yarn add native-base
+react-native link native-base
+doc: https://blog.rocketseat.com.br/native-base-no-react-native/
+doc: https://docs.nativebase.io/Components.html#Components
+
+** modal - ok
+yarn add react-native-modal
+doc: https://github.com/react-native-community/react-native-modal
+
+** barras de progresso - ok
+npm install react-native-progress --save
+doc: https://github.com/oblador/react-native-progress
+
+** edicao de cores  - ok
+npm install react-native-linear-gradient --save
+passos para instalar de modo correto : https://github.com/react-native-community/react-native-linear-gradient
+doc: https://github.com/react-native-community/react-native-linear-gradient
+
+** masked text - ok
+npm install react-native-masked-text --save
+doc: https://www.npmjs.com/package/react-native-masked-text
+doc: https://github.com/benhurott/react-native-masked-text
+
+** Swipe imgs
+yarn add react-native-swiper
+doc: https://github.com/leecade/react-native-swiper
+
+** Slider
+yarn add react-native-slider
+doc: https://github.com/jeanregisser/react-native-slider
+
+** Slider
+yarn add @react-native-community/slider
+react-native link @react-native-community/slider
+doc:https://github.com/react-native-community/react-native-slider
+
+** Star rating - ok
+yarn add react-native-star-rating
+doc: https://www.npmjs.com/package/react-native-star-rating
+
+
+####### Camera e galeria personalizada
+
+** acesso a camera e imagem - ok
+yarn add react-native-image-picker
+	react-native link react-native-image-picker
+	passos https://github.com/react-native-community/react-native-image-picker/blob/HEAD/docs/Install.md
+doc: https://www.npmjs.com/package/react-native-image-picker
+
+** Camera do dispositivo
+yarn add react-native-camera
+react-native link react-native-camera
+doc:https://blog.rocketseat.com.br/react-native-camera/
+doc:https://github.com/react-native-community/react-native-camera
+
+** Acesso a galeria do dispositivo
+yarn add rn-camera-roll
+react-native link rn-camera-roll
+doc:https://github.com/bamlab/rn-camera-roll
+
+** Gerar qrcode
+yarn add react-native-qrcode
+doc:https://github.com/cssivision/react-native-qrcode
+
+** layout base para qrcode
+yarn add react-native-barcode-mask
+doc:https://github.com/shahnawaz/react-native-barcode-mask
+
+####### Mapas, GPS e Geolocalização
+
+** mapas - ok
+npm install --save react-native-maps
+npm install react-native-maps
+	react-native link react-native-maps
+	passos para instalar https://medium.freecodecamp.org/how-to-integrate-maps-in-react-native-using-react-native-maps-5745490fe055
+	ps.: lembrar de colocar google() na primeira linha nas dependencias em build.gradle
+doc: https://github.com/react-native-community/react-native-maps
+mapStyle: https://mapstyle.withgoogle.com/
+
+** ativar GPS default - ok
+npm install react-native-android-enabler --save
+doc: https://github.com/Richou/react-native-android-location-enabler
+error - app stoped: https://github.com/Richou/react-native-android-location-enabler/issues/12 - android/app/build.gradle:
+	implementation 'com.google.android.gms:play-services-base:15.0.1'
+    	implementation 'com.google.android.gms:play-services-maps:15.0.1'
+
+** google autocomplete - ok
+yarn add react-native-google-places-autocomplete
+doc: https://github.com/FaridSafi/react-native-google-places-autocomplete
+
+####### Uso de videos e streaming
+
+** Streaming de video
+yarn add react-native-video
+react-native link react-native-video
+doc: https://hackernoon.com/video-streaming-in-your-react-native-app-feae1c6ae4e2
+doc: https://github.com/react-native-community/react-native-video#resizemode
+
+** Complemento ao streaming de videos
+yarn add react-native-media-controls
+doc:https://github.com/charliesbox/react-native-media-controls
+
+
+####### Acesso a aws via cliente (não recomendado)
+
+** acesso ao aws s3 - ok
+npm install --save react-native-aws3
+	passos https://www.npmjs.com/package/react-native-aws3
+doc: https://www.npmjs.com/package/react-native-aws3
+
+####### WebSocket real time
+
+** yarn add react-native-websocket
+doc:https://github.com/tiaanduplessis/react-native-websocket
+
+####### REDUX
+yarn add redux
+yarn add react-redux    - em caso de error undefined is not a function - yarn add react-redux@6.0.1
+doc:https://medium.com/building-with-react-native/what-is-asyncstorage-in-react-native-and-how-you-to-use-it-with-app-state-manager-1x09-b8c636ce5f6e
+
+####### Layout
+https://codedaily.io/tutorials/22/The-Shapes-of-React-Native
+
+####### pre-carregamento
+https://reactnavigation.org/docs/en/auth-flow.html
+
+####### PDF & Download
+** pdf 
+yarn add react-native-pdf-lib
+react-native link react-native-pdf-lib
+android{ ... dexOptions { jumboMode = true } ... }
+doc: https://github.com/Hopding/react-native-pdf-lib
+
+** filesystem android & ios
+yarn add react-native-fetch-blob
+react-native link react-native-fetch-blob
+doc: https://github.com/wkh237/react-native-fetch-blob
+
+create pdf and download example
+doc: https://github.com/brugnaro/newpdf/blob/master/App.js
+
+download from uri links example
+doc: https://github.com/Dragmon/DownloadFile/blob/master/App.android.js
+doc: https://github.com/Dragmon/DownloadFile/blob/master/App.ios.js
+
+####### Display name, icon and splash screen
+
+name
+doc: https://stackoverflow.com/questions/38580858/how-to-change-display-name-of-an-app-in-react-native
+
+icon
+doc: https://reactnativecode.com/set-change-app-icon/
+
+splash screnn
+doc: https://medium.com/handlebar-labs/how-to-add-a-splash-screen-to-a-react-native-app-ios-and-android-30a3cec835ae
+

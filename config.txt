@@ -1,0 +1,26 @@
+######################## Configuração
+
+instalando react-native:
+	https://github.com/Rocketseat/ambiente-react-native
+
+diretorio onde será o projeto
+	react-native init nomeProjeto
+
+	cd nomeProjeto/
+	1- criacao	: react-native run-android
+	2- apk ja criado: react-native start
+
+** (no caso de erro de execucao:
+	react-native start --reset-cache
+	react-native run-android || run-ios ) **
+
+** (no caso de erro: Error: ENOSPC:
+	diretorio do projeto:
+		echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+		sysctl --system ) **
+
+com o app ja no device ou emulador, ativar menu dev e "Enable Live Reload"
+
+resolver problema de versao node
+	nvm install 10.13.0
+
